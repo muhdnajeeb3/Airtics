@@ -7,13 +7,24 @@ import l3 from "../images/line3.png";
 import cap from "../images/Gcap.png";
 import twenty4 from "../images/24.png";
 import plus from "../images/plus.png";
+import realtime from "../images/rt.png";
+import iuc from "../images/iuc.png";
+import timing from "../images/timing.png";
+import learning from "../images/learn.png";
+import badge from "../images/badge.png";
+import bag from "../images/bag.png";
 
 function KeyFeatures() {
-  const [hover, setHover] = useState(false);
+  const [hover, setHover] = useState("");
 
-  const handleHover = () => {
-    setHover(!hover);
+  const handleMouseEnter = (id) => {
+    setHover(id);
   };
+
+  const handleMouseLeave = () => {
+    setHover(false);
+  };
+  
   return (
     <Wrapper fluid>
       {/* line bottom */}
@@ -131,11 +142,12 @@ function KeyFeatures() {
       {/* content */}
 
       <Roww2>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("1")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
+              <Div3 style={{ background: hover === '1' ? "#fff" : "#FCAF17" }}></Div3>
               <Image src={cap} alt="" />
             </Div1>
             <SPAN4>Live virtual training</SPAN4>
@@ -146,12 +158,13 @@ function KeyFeatures() {
             </SPAN5>
           </Row>
         </Col1>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("2")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
-              <Image src={cap} alt="" />
+              <Div3 style={{ background: hover === '2' ? "#fff" : "#FCAF17" }}></Div3>
+              <Image src={timing} alt="" />
             </Div1>
             <SPAN4>Interactive learning with flexible timing</SPAN4>
             <br />
@@ -161,12 +174,13 @@ function KeyFeatures() {
             </SPAN5>
           </Row>
         </Col1>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("3")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
-              <Image src={cap} alt="" />
+              <Div3 style={{ background: hover === '3' ? "#fff" : "#FCAF17" }}></Div3>
+              <Image src={badge} alt="" />
             </Div1>
             <SPAN4>Industry-standard curriculum</SPAN4>
             <br />
@@ -178,12 +192,13 @@ function KeyFeatures() {
         </Col1>
       </Roww2>
       <Roww2>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("4")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
-              <Image src={cap} alt="" />
+              <Div3 style={{ background: hover === '4' ? "#fff" : "#FCAF17" }}></Div3>
+              <Image src={realtime} alt="" />
             </Div1>
             <SPAN4>Real-time projects</SPAN4>
             <br />
@@ -193,12 +208,13 @@ function KeyFeatures() {
             </SPAN5>
           </Row>
         </Col1>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("5")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
-              <Image src={cap} alt="" />
+              <Div3 style={{ background: hover === '5' ? "#fff" : "#FCAF17" }}></Div3>
+              <Image src={bag} alt="" />
             </Div1>
             <SPAN4>Guaranteed internship</SPAN4>
             <br />
@@ -208,12 +224,13 @@ function KeyFeatures() {
             </SPAN5>
           </Row>
         </Col1>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("6")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
-              <Image src={cap} alt="" />
+              <Div3 style={{ background: hover === '6' ? "#fff" : "#FCAF17" }}></Div3>
+              <Image src={learning} alt="" />
             </Div1>
             <SPAN4>Learn from industry experts</SPAN4>
             <br />
@@ -225,11 +242,12 @@ function KeyFeatures() {
         </Col1>
       </Roww2>
       <Roww2>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("7")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
+              <Div3 style={{ background: hover === '7' ? "#fff" : "#FCAF17" }}></Div3>
               <Image src={twenty4} alt="" />
             </Div1>
             <SPAN4>24x7 learning support</SPAN4>
@@ -240,11 +258,12 @@ function KeyFeatures() {
             </SPAN5>
           </Row>
         </Col1>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("8")}
+      onMouseLeave={handleMouseLeave}>
           <Row>
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
+              <Div3 style={{ background: hover === '8' ? "#fff" : "#FCAF17" }}></Div3>
               <Image src={plus} alt="" />
             </Div1>
             <SPAN4>100% placement assistance</SPAN4>
@@ -255,12 +274,13 @@ function KeyFeatures() {
             </SPAN5>
           </Row>
         </Col1>
-        <Col1 onMouseEnter={handleHover} onMouseLeave={handleHover}>
+        <Col1 onMouseEnter={()=>handleMouseEnter("9")}
+      onMouseLeave={handleMouseLeave}>
           <Row >
             <Div1>
               <Div2></Div2>
-              <Div3 style={{ background: hover ? "#fff" : "#FCAF17" }}></Div3>
-              <Image src={cap} alt="" />
+              <Div3 style={{ background: hover === '9' ? "#fff" : "#FCAF17" }}></Div3>
+              <Image src={iuc} alt="" />
             </Div1>
             <SPAN4>International university certification</SPAN4>
             <br />
@@ -345,7 +365,7 @@ const SPAN3 = styled.span`
 `;
 const Col1 = styled(Col)`
   width: 306px;
-  height: 287px;
+  min-height: 287px;
   background: none;
   flex: 1 1 306px;
   padding: 30px 50px;
@@ -354,6 +374,7 @@ const Col1 = styled(Col)`
   &:hover {
     background: #fcaf17;
     box-shadow: 0px 22px 43px #ffe3ac;
+    z-index:222;
     .Div3 {
       background: #fff;
     }

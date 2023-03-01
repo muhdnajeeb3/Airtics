@@ -33,7 +33,7 @@ function SecondSection() {
         <Row style={{marginTop:"4rem",marginBottom:"4rem"}} >
           <SPAN1>Our Courses</SPAN1>
         </Row>
-        <Row style={{marginTop:"3rem",display:"flex",justifyContent:"flex-start"}}>
+        <Row1 >
           <Col>
         <Buttons variant='' onClick={Courses1} style={{background:course1 ? "#FCAF17" : "",boxShadow: course1 ? "0px 6px 18px rgba(231, 188, 119, 0.71)" : "",borderRadius:"0"}} ><SPAN2>Popular Courses</SPAN2></Buttons>
           </Col>
@@ -43,7 +43,7 @@ function SecondSection() {
           <Col>
         <Buttons variant='' onClick={Courses3} style={{background:course3 ? "#FCAF17" : "",boxShadow: course3 ? "0px 6px 18px rgba(231, 188, 119, 0.71)" : "",borderRadius:"0"}} ><SPAN2>PG Programs</SPAN2></Buttons>
           </Col>
-        </Row>
+        </Row1>
         {/* <SliderCarousel /> */}
         <CardSlider />
     </Container>
@@ -53,12 +53,18 @@ function SecondSection() {
 export default SecondSection;
 
 // css
+const Row1 = styled(Row)`
+width: 98%;
+display: flex;
+margin-left: 1rem;
 
+`;
 const SPAN1 =styled.span`
 font-family: 'Metropolis';
 font-style: normal;
 font-weight: 600;
 font-size: 38px;
+padding-left: 2rem;
 line-height: 48px;
 /* identical to box height, or 126% */
 color: #303030;

@@ -27,7 +27,7 @@ const Div =styled.div`
 position:absolute;
 width:85px;
 height:55px;
-bottom:-14%;
+bottom:-21%;
 right:2%;
 opacity: 1;
 border: 1px solid #000000;

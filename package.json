@@ -25,6 +25,7 @@
     "bootstrap": "^5.2.3",
     "frontity": "^1.17.2",
     "react-bootstrap": "^2.7.2",
+    "react-player": "^2.11.2",
     "react-slick": "^0.29.0"
   }
 }

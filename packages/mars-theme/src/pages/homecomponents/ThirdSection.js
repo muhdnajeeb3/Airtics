@@ -1,5 +1,5 @@
 import { css, styled } from "frontity";
-import React from "react";
+import React,{useState} from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import l1 from "../images/line1.png";
 import l2 from "../images/line2.png";
@@ -11,6 +11,23 @@ import p4 from "../images/p2.png";
 import p5 from "../images/p5.png";
 
 function ThirdSection() {
+  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered2, setIsHovered2] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+  const handleMouseEnter2 = () => {
+    setIsHovered2(true);
+  };
+
+  const handleMouseLeave2 = () => {
+    setIsHovered2(false);
+  };
   return (
     <Container fluid style={{position:"relative",minHeight:"707px",marginTop:"10rem"}}>
         {/* lines edge bottom*/}
@@ -147,8 +164,9 @@ function ThirdSection() {
                 padding:"60px 40px 40px 40px",
                 position:"relative",
               }}
+
             >
-                <Div1>
+                <Div1 >
                     {/* <Image src={p1} alt="" /> */}
                     <SPAN5></SPAN5>
                     <Image1 src={p2} alt="" />
@@ -173,9 +191,12 @@ function ThirdSection() {
                 position:"relative"
 
               }}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+        
             >
-                <Div1>
-                <SPAN4></SPAN4>
+                <Div1 >
+                <SPAN4 style={{background:isHovered ? "black" : ""}}></SPAN4>
 
                     <Image1 src={p4} alt="" />
 
@@ -195,9 +216,12 @@ function ThirdSection() {
                 padding:"60px 40px 40px 40px",
                 position:"relative"
               }}
+              onMouseEnter={handleMouseEnter2}
+              onMouseLeave={handleMouseLeave2}
+        
             >
                 <Div1>
-                <SPAN4></SPAN4>
+                <SPAN4 style={{background:isHovered2 ? "black" : ""}}></SPAN4>
 
                     <Image1 src={p5} alt="" />
 

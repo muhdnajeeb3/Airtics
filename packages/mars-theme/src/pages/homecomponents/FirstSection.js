@@ -21,6 +21,7 @@ import ThirdSection from "./ThirdSection";
 import Auxcollabration from "./Auxcollabration";
 import KeyFeatures from "./KeyFeatures";
 import Enrol from "./Enrol";
+import DemoClass from "./DemoClass";
 
 
 function FirstSection() {
@@ -230,10 +231,7 @@ function FirstSection() {
           {/* arranging to top */}
           <Div5
             style={{
-              width: "1187px",              
               overflow:"hidden",
-              // height: "167px",
-              // bottom: "67%",
               top: "-29%",
               backgroundColor: "#ffffff",
               borderRadius: "3px",
@@ -287,13 +285,8 @@ function FirstSection() {
             </Col>
           </Div5>
           {/* motivation */}
-          <Row style={{width:"1189px"}}>
-          <Col
-            style={{
-              display: "flex",
-              // justifyContent: "center",
-           
-            }}
+          <Row1 >
+          <Col2
           >
             <Div4>
               <img src={m1} alt="" />
@@ -301,9 +294,9 @@ function FirstSection() {
             <SPAN2>
               We'll define, <strong>You'll LEARN</strong>{" "}
             </SPAN2>
-          </Col>
+          </Col2>
           <Divider></Divider>
-          <Col style={{ display: "flex", justifyContent: "center" }}>
+          <Col2 >
             {/* <Row> */}
               <Div4>
                 <img src={m2} alt="" />
@@ -312,18 +305,18 @@ function FirstSection() {
                 We'll exhibit, <strong>you'll REMEMBER</strong>{" "}
               </SPAN2>
             {/* </Row> */}
-          </Col>
+          </Col2>
           <Divider></Divider>
 
-          <Col style={{ display: "flex", justifyContent: "center" }}>
+          <Col2>
             <Div4>
               <img src={m3} alt="" />
             </Div4>
             <SPAN2>
               We'll motivate <strong> you'll PERFORM</strong>{" "}
             </SPAN2>
-          </Col>
-          </Row>
+          </Col2>
+          </Row1>
         </Row>
       </div>
       {/* second */}
@@ -333,6 +326,10 @@ function FirstSection() {
       {/* third */}
       <div>
         <ThirdSection />
+      </div>
+      {/* demo class */}
+      <div>
+        <DemoClass />
       </div>
       {/* fourth */}
       <div>
@@ -361,6 +358,16 @@ const Firstsectionwrapper = styled.div`
   border-radius: 0px;
   //   position:relative;
 `;
+const Row1 =styled(Row)`
+width:1189px;
+@media (max-width: 480px) {
+  display:flex;
+  flex-direction:column;
+  margin-bottom:4rem;
+
+    
+     }
+`;
 const Col1 = styled(Col)`
 
   width: 100%;
@@ -369,9 +376,15 @@ const Col1 = styled(Col)`
   gap:50px;
   @media (max-width: 480px) {
   flex-direction:column;
+  gap:10px;
     
      }
-}}
+
+`;
+const Col2 = styled(Col)`
+display:flex;
+justify-content:center;
+
 `;
 const Div3 = styled.div`
   margin-left: 6.7rem;
@@ -480,10 +493,7 @@ const SPAN2 = styled.span`
   font-size: 18px;
   line-height: 28px;
   margin-top: 10rem;
-  // display:flex;
-  // gap:120px;
 
-  // padding-top:120px;
 `;
 const SPAN3 = styled.span`
   font-family: "Metropolis";
@@ -491,11 +501,6 @@ const SPAN3 = styled.span`
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  // margin-top:10rem;
-  // display:flex;
-  // gap:120px;
-
-  // padding-top:120px;
 `;
 
 const Divider = styled.div`
@@ -503,14 +508,11 @@ const Divider = styled.div`
   border-right: 2px solid black;
   height: 30%;
   margin-top: 150px;
-  // position: absolute;
-  // padding-left: 10px;
 
   @media (max-width: 500px) {
-    // flex-direction:column;
+
     display:none;
-    // margin-bottom:10rem;
-    // position:relative;
+
   }
 `;
 const Divider1 = styled.div`
@@ -518,8 +520,6 @@ const Divider1 = styled.div`
   border-right: 2px solid #303030;
   height: 60%;
   margin-top: 28px;
-  // position: absolute;
-  // padding-left: 10px;
 `;
 // bold text
 const Bold = styled.strong`
@@ -528,8 +528,6 @@ const Bold = styled.strong`
   font-weight: 700;
   font-size: 40px;
   line-height: 80px;
-  /* identical to box height, or 200% */
-
   color: #303030;
 `;
 const Div4 = styled.div`
@@ -538,11 +536,19 @@ const Div4 = styled.div`
 const Div5 = styled.div`
   display:flex;
   position:absolute;
+  width:1187px;              
 
-  @media (max-width: 860px) {
+  @media (max-width: 900px) {
     flex-direction:column;
-    // margin-bottom:10rem;
     position:relative;
   }
+  @media (max-width: 480px) {
+   width:379px;
+    flex-direction:column;
+    padding:24px;
+    position:relative;
+
+  }
+
 `;
 

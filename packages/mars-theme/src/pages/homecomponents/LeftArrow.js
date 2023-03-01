@@ -29,7 +29,7 @@ const Div =styled.div`
 position:absolute;
 width:85px;
 height:55px;
-bottom:-14%;
+bottom:-21%;
 right:11%;
 z-index:1;
 opacity: 1;

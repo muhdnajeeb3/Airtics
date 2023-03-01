@@ -140,6 +140,7 @@ export default Enrol;
 
 const Wrapper =styled(Container)`
 // position:relative;
+margin-top:3rem;
 `;
 
 const SPAN = styled.span`

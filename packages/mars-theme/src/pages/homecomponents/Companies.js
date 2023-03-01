@@ -126,7 +126,8 @@ const SPAN1 = styled.span`
   color: #303030;
 `;
 const Wrapper = styled(Container)`
-  margin-top: 4rem;
+  margin-top:5rem;
+  padding-bottom: 5rem;
 `;
 const Div = styled.div`
   width: 231px;
