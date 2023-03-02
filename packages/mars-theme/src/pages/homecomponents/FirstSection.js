@@ -136,7 +136,6 @@ function FirstSection() {
         <Row
           style={{
             display: "flex",
-            // position: "relative",
             flexWrap: "wrap",
             flexDirection: "row",
           }}
@@ -156,11 +155,7 @@ function FirstSection() {
               </Paragraph>
             </Row>
             <Div3
-              style={{
-                display: "flex",
-                justifyItems: "center",
-                marginTop: "5%",
-              }}
+              
             >
               <Col1
               >
@@ -203,14 +198,7 @@ function FirstSection() {
               <Images
                 src={img1}
                 alt=""
-                style={{
-                  // width:"764px",
-                  // height: "525px",
-                  // left: "676px",
-                  objectFit: "contain",
-                  zIndex: "12",
-                  opacity: "1",
-                }}
+                
               />
             </div>
           </Col>
@@ -230,13 +218,6 @@ function FirstSection() {
         >
           {/* arranging to top */}
           <Div5
-            style={{
-              overflow:"hidden",
-              top: "-29%",
-              backgroundColor: "#ffffff",
-              borderRadius: "3px",
-              boxShadow: "0px 9px 29px -8px rgba(0, 0, 0, 0.2)",
-            }}
           >
             <Col style={{ padding: "30px" }}>
               <Row
@@ -245,7 +226,6 @@ function FirstSection() {
                   justifyContent: "space-between",
                   gap: "-150px",
                   margin:"10px"
-                  // position:"relative"
                 }}
               >
                 <Col>
@@ -388,6 +368,9 @@ justify-content:center;
 `;
 const Div3 = styled.div`
   margin-left: 6.7rem;
+  display: flex;
+  justify-items: center;
+  margin-top: 5%;
   @media (max-width: 560px) {
    margin-left:4rem;
     }
@@ -397,27 +380,23 @@ const Div3 = styled.div`
 const Images = styled.img`
   width:764px;
   max-width: "100%";
-  // display:none;
+  object-fit: contain;
+  z-index: 12;
+  opacity: 1;
 
   @media (max-width: 560px) {
   width:100%;
-
-    max-width: "100%";
-    // background-color: blue;
   }
 `;
 
 const StudentImage = styled.img`
   width: 120px;
   height: 104px;
-  // padding:-20px 0
+
 `;
 const Word = styled.p`
   position: relative;
-  // margin-left: 2rem;
-  // right: 60.28%;
   top: 36.38%;
-  // bottom: 94.36%;
 
   font-family: "Metropolis";
   font-style: normal;
@@ -431,16 +410,14 @@ const Word = styled.p`
 const Paragraph = styled.p`
   height: 96px;
   width: 592px;
-  // left: 117px;
-  // top: 521px;
+
   padding-left: 6.8rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-radius: null;
 
   position: relative;
-  //   left: 15.52%;
-  // right: 52.85%;
+
   top: 9.12%;
   bottom: 95.12%;
 
@@ -449,7 +426,6 @@ const Paragraph = styled.p`
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
-  /* or 160% */
 
   text-transform: capitalize;
 
@@ -463,12 +439,6 @@ const Paragraph = styled.p`
 // span
 const SPAN = styled.span`
   position: relative;
-  // display:flex;
-  // justify-content:center;
-
-  //   margin-bottom:50px;
-
-  // border-radius: null;
   padding-left: 6.7rem;
   padding-top: 3rem;
 
@@ -477,8 +447,6 @@ const SPAN = styled.span`
   font-weight: 600;
   font-size: 64px;
   line-height: 80px;
-  /* or 125% */
-
   color: #303030;
 
   @media (max-width: 650px) {
@@ -536,7 +504,12 @@ const Div4 = styled.div`
 const Div5 = styled.div`
   display:flex;
   position:absolute;
-  width:1187px;              
+  width:1187px;        
+  over-flow:hidden;
+  top: -29%;
+  background-color: #ffffff;
+  border-radius:3px;
+  box-shadow: 0px 9px 29px -8px rgba(0, 0, 0, 0.2);      
 
   @media (max-width: 900px) {
     flex-direction:column;

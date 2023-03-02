@@ -3,7 +3,7 @@ const settings = {
   "state": {
     "frontity": {
       "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
+      "title": "Airtics",
       "description": "WordPress installation for Frontity development"
     }
   },
@@ -17,22 +17,7 @@ const settings = {
               "Home",
               "/"
             ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
+          
           ],
           "featured": {
             "showOnList": false,
