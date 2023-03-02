@@ -8,6 +8,7 @@ import dots from "../images/dots.png";
 function Auxcollabration() {
   return (
     <Wrapper fluid>
+      {/* comment */}
       <Row1>
         <Div1>
           <img src={dots} alt="" />
