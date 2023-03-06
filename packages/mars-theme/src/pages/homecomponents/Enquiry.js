@@ -182,6 +182,11 @@ width:924px;
 position:relative;
 
 }
+@media(max-width:480px){
+  top:-5%;
+
+
+}
 `;
 const Image1 = styled.img`
 position:absolute;

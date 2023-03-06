@@ -57,6 +57,9 @@ const Row1 = styled(Row)`
 width: 98%;
 display: flex;
 margin-left: 1rem;
+@media(max-width:480px){
+  margin-left:0;
+}
 
 `;
 const SPAN1 =styled.span`
@@ -66,7 +69,6 @@ font-weight: 600;
 font-size: 38px;
 padding-left: 2rem;
 line-height: 48px;
-/* identical to box height, or 126% */
 color: #303030;
 `;
 const SPAN2 =styled.span`
@@ -75,9 +77,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 26px;
-/* identical to box height, or 162% */
-
-
 color: #303030;
 `;
 
@@ -92,5 +91,9 @@ min-height:44px;
 }
 @media(max-width:760px){
   margin-top:15px
+}
+@media(max-width:520px){
+  min-height:64px;
+
 }
 `;

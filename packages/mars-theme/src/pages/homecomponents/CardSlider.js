@@ -34,7 +34,7 @@ function CardSlider() {
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 650,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,

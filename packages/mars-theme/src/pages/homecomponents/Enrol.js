@@ -241,6 +241,20 @@ const Details = styled.details`
     border-right: 2px solid black;
     transform: ${(props) => (props.open ? "rotate(-45deg)" : "rotate(135deg)")};
     transition: transform 0.3s ease-in-out;
+    @media(max-width:650px){
+    margin-left: 18rem;
+    position: relative;
+    top: -26px;
+      
+  
+      }
+      @media(max-width:380px){
+        margin-left: 14.5rem;
+        position: relative;
+        top: -26px;
+          
+      
+          }
   }
   details[open] > summary::after {
   transform: rotate(-40deg);

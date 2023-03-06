@@ -357,6 +357,7 @@ const SPAN3 = styled.span`
   font-size: 16px;
   line-height: 26px;
   width: 694px;
+  z-index:1;
   /* or 162% */
 
   text-align: center;

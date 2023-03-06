@@ -133,7 +133,7 @@ function FirstSection() {
             }}
           />
         </div>
-        <Row
+        <RowWrapper
           style={{
             display: "flex",
             flexWrap: "wrap",
@@ -202,7 +202,7 @@ function FirstSection() {
               />
             </div>
           </Col>
-        </Row>
+        </RowWrapper>
       </div>
       <div>
         <Row
@@ -243,25 +243,22 @@ function FirstSection() {
               </Row>
             </Col>
             <Col style={{ display: "flex" }}>
-              <Col style={{ justifyContent: "center", padding: "10px 10px" }}>
+              <Col3 >
                 <Bold>35</Bold>
-                <br />
                 <SPAN3>Online Courses</SPAN3>
-              </Col>
+              </Col3>
               <Divider1 />
-              <Col style={{ justifyContent: "center", padding: "10px 10px" }}>
+              <Col3>
                 <Bold>5k</Bold>
-                <br />
                 <SPAN3>Students</SPAN3>
-              </Col>
+              </Col3>
               <Divider1 />
-              <Col style={{ justifyContent: "center", padding: "10px 10px" }}>
+              <Col3 >
                 <Bold>
                   4.5 <img src={rating} alt="" />
                 </Bold>
-                <br />
                 <SPAN3>Rating</SPAN3>
-              </Col>
+              </Col3>
             </Col>
           </Div5>
           {/* motivation */}
@@ -338,12 +335,18 @@ const Firstsectionwrapper = styled.div`
   border-radius: 0px;
   //   position:relative;
 `;
+const RowWrapper =styled(Row)`
+
+@media (max-width: 1024px) {
+      margin-top:5rem;
+     }
+`;
 const Row1 =styled(Row)`
 width:1189px;
 @media (max-width: 480px) {
   display:flex;
   flex-direction:column;
-  margin-bottom:4rem;
+  margin-bottom:5rem;
 
     
      }
@@ -364,6 +367,12 @@ const Col1 = styled(Col)`
 const Col2 = styled(Col)`
 display:flex;
 justify-content:center;
+
+`;
+const Col3 = styled(Col)`
+display:grid;
+justify-content:center;
+padding:35px 10px;
 
 `;
 const Div3 = styled.div`
@@ -435,6 +444,9 @@ const Paragraph = styled.p`
     padding-left: 5rem;
     padding-bottom: 5.5rem;
   }
+  @media (max-width: 480px) {
+    padding-left: 3rem;
+  }
 `;
 // span
 const SPAN = styled.span`
@@ -451,6 +463,9 @@ const SPAN = styled.span`
 
   @media (max-width: 650px) {
     padding-left: 5rem;
+  }
+  @media (max-width: 480px) {
+    padding-left: 3rem;
   }
 `;
 

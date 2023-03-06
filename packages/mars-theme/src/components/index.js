@@ -8,6 +8,7 @@ import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
 import HomeScreen from '../pages/HomeScreen'
+import CourseScreens from "../pages/CourseScreens";
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -45,7 +46,8 @@ const Theme = ({ state }) => {
       {/* Add the header of the site. */}
       <HeadContainer>
         {/* <Header /> */}
-        <HomeScreen />
+        {/* <HomeScreen /> */}
+        <CourseScreens />
         
       </HeadContainer>
 
@@ -68,6 +70,7 @@ export default connect(Theme);
 const globalStyles = css`
   body {
     margin: 0;
+    padding:0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
       "Droid Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -84,6 +87,8 @@ const HeadContainer = styled.div`
   // align-items: center;
   // flex-direction: column;
   // background-color: #1f38c5;
+  // width: 1439px;
+
 `;
 
 const Main = styled.div`
