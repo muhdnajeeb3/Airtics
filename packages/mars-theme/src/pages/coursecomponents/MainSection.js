@@ -1,5 +1,6 @@
 import React from 'react'
 import AboutAux from './AboutAux'
+import CourseModules from './CourseModules';
 import Skills from './Skills';
 
 function MainSection() {
@@ -7,6 +8,7 @@ function MainSection() {
     <>
     <AboutAux />
     <Skills />
+    <CourseModules />
 
     </>
   )
